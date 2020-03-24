@@ -1,0 +1,21 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "sqlite",
+        "filename": ".tmp/data.db",
+        "host": "",
+        "port": "",
+        "database": "",
+        "username": "",
+        "password": "",
+        "ssl": false
+      },
+      "options": {
+        "useNullAsDefault": true
+      }
+    }
+  }
+}
