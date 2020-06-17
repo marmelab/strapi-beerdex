@@ -1,4 +1,5 @@
 version: "3"
+
 services:
   backend:
     image: strapi/strapi
@@ -6,3 +7,16 @@ services:
       - ./backend:/srv/app
     ports:
       - "1337:1337"
+
+  frontend:
+    image: node:12.13.0-stretch
+    working_dir: "/app/frontend"
+    command: yarn dev
+    environment:
+      - API_BASEURL=http://localhost:1337
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend

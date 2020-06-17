@@ -7,6 +7,7 @@ help:
 
 install: ## Install the application
 	${DOCKER_COMPOSE} pull
+	${DOCKER_COMPOSE} run --rm --no-deps frontend bash -c "yarn install"
 
 start: ## Start the application
 	${DOCKER_COMPOSE} up -d
