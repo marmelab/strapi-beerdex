@@ -14,12 +14,6 @@ make install
 make start
 ```
 
-## Test
-
-```sh
-make test
-```
-
 ## Contributing
 
 1. Fork it ( https://github.com/marmelab/strapi-beerdex/fork )
