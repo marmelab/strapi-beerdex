@@ -1,6 +1,7 @@
 # Beerdex
 
 Beerdex is an example application using StrapiJS and NextJS.
+Corresponding Article => https://marmelab.com/blog/2020/06/18/build-an-application-in-fiften-minutes-using-strapijs.html
 
 ## Installation
 
